@@ -1,0 +1,58 @@
+<p>myhack works!</p>
+<!-- <div>{{hackathons}}</div> -->
+<div class="wrapper1">
+    <div class="wrapper2">
+    <div class="wrapper" style=" display: flex;
+    flex-flow: row wrap;
+    flex-wrap: wrap;
+    flex-direction: row;   width: 100%;
+  /* Firefox */
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  /* Safari and Chrome */
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  /* W3C */
+  display: box;
+  box-pack: center;
+  box-align: center; ">
+        <div *ngFor="let x of hackathons; let i=index"> 
+        <div class="img-card iCard-style4 mycard" style=" flex-direction: column;flex-wrap: wrap; ">
+            <div class="card-content">
+                <div class="card-image">
+                    <span class="card-caption">
+                        <img style="width:20px;" src="{{x.companyLogo}}"/>
+                        {{x.company}}
+                    </span>
+                    <img src="{{x.image}}"/>
+                </div>
+
+                <div class="card-title"><span>{{x.title}}</span></div>
+                <!-- <br/> -->
+                <div class="card-title"><span>{{x.date}}</span></div>
+                <!-- <div class="toggle" onclick="showText(this)">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div> -->
+
+                <div class="card-text">
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Image by <a href="https://pixabay.com/users/megspl-8890573/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3383814" style="text-decoration: none">megspl</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=3383814"style="text-decoration: none">Pixabay</a>
+                    </p>
+                </div>
+                
+            </div>
+            
+            <div class="card-link">
+                <a href="{{x.link}}" title="Read Full">
+                    <span>Read More</span>                        
+                </a>
+            </div>
+        </div>  
+    </div>
+</div>
+</div>
+</div>
